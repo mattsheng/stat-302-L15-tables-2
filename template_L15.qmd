@@ -33,6 +33,12 @@ To link to your github **repo**sitory, appropriately edit the example link below
 
 :::
 
+::: {.callout-important}
+
+This is an optional lab, not a bonus lab. Meaning there are no bonus points.
+
+:::
+
 ## Overview
 
 The goal of this lab is to explore interactive tables with the `DT` and `reactable` packages. Interactive tables are particularly useful if you are displaying tables in an app.
@@ -41,7 +47,7 @@ The `gt` package added interactive elements with `opt_interactive()`. While ther
 
 ## Dataset
 
-We will be using the `pizzaplace` dataset included in the `gt` package and the `movie_ratings.rds` dataset, which should be placed into your `/data` subdirectory.
+We will be using the `pizzaplace` dataset included in the `gt` package and the `movie_ratings.rds` dataset, which should be placed into your `data/` subdirectory.
 
 ```{r}
 #| label: load-pkgs-data
@@ -96,10 +102,10 @@ Using the `movie_ratings` dataset, recreate the following graphic as precisely a
 -   columns are changed within `column = list(...)`
 -   `cell = function(value) {bar_chart(...) }`
 -   `theme` argument equals `reactableTheme()`
-    -   backgroundColor = `"#e6e6e6"`,
-    -   borderColor = `"#fc5185"`,
-    -   stripedColor = `"#b3e6ff"`,
-    -   borderWidth = `"3px"`
+    -   `backgroundColor = "#e6e6e6"`,
+    -   `borderColor = "#fc5185"`,
+    -   `stripedColor = "#b3e6ff"`,
+    -   `borderWidth = "3px"`
 -   Helpful links:
     -   <https://glin.github.io/reactable/>
     -   <https://glin.github.io/reactable/articles/examples.html>
